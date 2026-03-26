@@ -1,0 +1,117 @@
+/* =========================
+   NORMALIZE CSS (MODERNO)
+========================= */
+
+
+/* 1. Reset básico */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* 2. Remove margens padrão */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure {
+    margin: 0;
+}
+
+
+/* 3. Altura base */
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* 4. Melhor renderização de texto */
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* 5. Imagens e mídia responsivas */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* 6. Remove estilo padrão de listas */
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* 7. Links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 8. Inputs e botões consistentes */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+/* 9. Botões clicáveis */
+
+button {
+    cursor: pointer;
+}
+
+
+/* 10. Tabelas */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 11. Scroll suave */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+/* 12. Evita overflow horizontal acidental */
+
+body {
+    overflow-x: hidden;
+}
