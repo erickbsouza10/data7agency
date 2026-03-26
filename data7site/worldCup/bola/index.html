@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bola da Copa do Mundo | Futurista</title>
+    <meta name="description" content="Uma experiência futurista sobre a bola da Copa do Mundo com visual 3D imersivo." />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-dot"></span>
+            <span>BOLA<span class="gradient-text">.FIFA</span></span>
+        </div>
+
+        <nav class="nav">
+            <a href="#inicio">Início</a>
+            <a href="#design">Design</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#historia">História</a>
+        </nav>
+
+        <a href="#explorar" class="nav-btn">Explorar</a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-left">
+                <div class="tag reveal">
+                    <span></span> EDIÇÃO FUTURISTA
+                </div>
+
+                <h1 class="reveal">
+                    A <span class="gradient-text">bola da Copa do Mundo</span> como você nunca viu.
+                </h1>
+
+                <p class="hero-text reveal">
+                    Um ícone do futebol reinterpretado em uma experiência visual moderna, com design imersivo, atmosfera tecnológica e presença 3D marcante.
+                </p>
+
+                <div class="hero-actions reveal">
+                    <a href="#explorar" class="btn btn-primary">Ver experiência</a>
+                    <a href="#design" class="btn btn-secondary">Conhecer detalhes</a>
+                </div>
+
+                <div class="hero-stats reveal">
+                    <div class="stat-card">
+                        <h3>32</h3>
+                        <p>painéis e formas inspiradoras</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>3D</h3>
+                        <p>visualização interativa em tempo real</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>energia de Copa do Mundo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right reveal">
+                <div class="viewer-shell">
+                    <div class="viewer-ring ring-1"></div>
+                    <div class="viewer-ring ring-2"></div>
+                    <model-viewer id="ball3d" src="source/bola.glb" alt="Bola 3D" camera-controls touch-action="pan-y" auto-rotate rotation-per-second="18deg" interaction-prompt="auto" camera-orbit="0deg 75deg 100.8m" min-camera-orbit="auto 0deg 2.2m" max-camera-orbit="auto 180deg 6m"
+                        min-field-of-view="20deg" max-field-of-view="90deg" style="width: 100%; height: 100%; background: transparent;">
+                    </model-viewer>
+
+                    <div class="viewer-overlay viewer-top">WORLD CUP BALL</div>
+                    <div class="viewer-overlay viewer-bottom">INTERACTIVE 3D EXPERIENCE</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-highlight" id="explorar">
+            <div class="section-header reveal">
+                <span class="mini-title">EXPERIÊNCIA VISUAL</span>
+                <h2>Beleza, precisão e presença em campo</h2>
+                <p>
+                    A bola da Copa do Mundo vai além do esporte: ela representa tecnologia, identidade visual e momentos históricos que marcaram gerações.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card reveal">
+                    <div class="feature-number">01</div>
+                    <h3>Design icônico</h3>
+                    <p>
+                        Cada detalhe transmite movimento, velocidade e personalidade visual, transformando a bola em um símbolo global.
+                    </p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-number">02</div>
+                    <h3>Presença futurista</h3>
+                    <p>
+                        O visual escuro, os brilhos neon e a composição moderna criam uma estética sofisticada e atual.
+                    </p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-number">03</div>
+                    <h3>Experiência interativa</h3>
+                    <p>
+                        O modelo 3D aproxima o visitante do objeto, permitindo observar a peça com mais impacto e imersão.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section dual-section" id="design">
+            <div class="glass-card reveal">
+                <span class="mini-title">DESIGN</span>
+                <h2>Uma peça visual criada para marcar eras</h2>
+                <p>
+                    A bola oficial da Copa do Mundo sempre carrega uma proposta estética forte. Suas formas, contrastes e acabamento costumam traduzir inovação, movimento e a identidade do torneio.
+                </p>
+            </div>
+
+            <div class="glass-card reveal">
+                <span class="mini-title">IMPACTO</span>
+                <h2>Mais do que um objeto, um símbolo</h2>
+                <p>
+                    Dentro e fora do campo, a bola representa o auge do futebol mundial. Ela concentra emoção, memória coletiva e o espírito competitivo de uma Copa.
+                </p>
+            </div>
+        </section>
+
+        <section class="section timeline-section" id="tecnologia">
+            <div class="section-header reveal">
+                <span class="mini-title">TECNOLOGIA E EVOLUÇÃO</span>
+                <h2>Quando esporte encontra inovação</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Estrutura avançada</h3>
+                        <p>
+                            A evolução das bolas oficiais acompanha melhorias de aerodinâmica, estabilidade e desempenho em jogo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Precisão visual</h3>
+                        <p>
+                            O desenho externo não é apenas estético: ele reforça identidade, leitura visual e impacto de marca.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Experiência contemporânea</h3>
+                        <p>
+                            Em ambientes digitais, a bola ganha nova vida com recursos 3D, animações, luzes e navegação imersiva.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section final-section" id="historia">
+            <div class="final-box reveal">
+                <span class="mini-title">LEGADO</span>
+                <h2>A bola que carrega a energia do maior palco do futebol</h2>
+                <p>
+                    Em cada Copa, ela entra em campo como parte da história. Seu visual, sua presença e sua memória coletiva fazem dela uma das peças mais marcantes do esporte mundial.
+                </p>
+
+                <a href="#inicio" class="btn btn-primary">Voltar ao topo</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
